@@ -1,0 +1,10 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "globals": {
+    "cy": true
+  }
+}

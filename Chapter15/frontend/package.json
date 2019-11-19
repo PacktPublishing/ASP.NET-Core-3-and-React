@@ -1,0 +1,56 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aspnet/signalr": "^3.0.0-preview6.19307.2",
+    "@auth0/auth0-spa-js": "^1.2.3",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.5",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "auth0-js": "^9.11.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.2",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:production": "cross-env REACT_APP_ENV=production npm run build",
+    "build:staging": "cross-env REACT_APP_ENV=staging npm run build",
+    "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test",
+    "eject": "react-scripts eject",
+    "cy:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^5.0.1",
+    "@testing-library/react": "^9.1.4",
+    "@types/react-router-dom": "^4.3.5",
+    "cross-env": "^6.0.0",
+    "cypress": "^3.4.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  }
+}

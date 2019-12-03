@@ -14,8 +14,6 @@ import { AnyAction } from 'redux';
 import {
   getQuestionActionCreator,
   AppState,
-  GotQuestionAction,
-  PostedAnswerAction,
   postAnswerActionCreator,
   clearPostedAnswerActionCreator,
 } from './Store';
@@ -24,10 +22,10 @@ interface RouteParams {
   questionId: string;
 }
 interface Props extends RouteComponentProps<RouteParams> {
-  getQuestion: (questionId: number) => Promise<GotQuestionAction>;
+  getQuestion: (questionId: number) => Promise<void>;
   question: QuestionData | null;
   questionLoading: boolean;
-  postAnswer: (answer: PostAnswerData) => Promise<PostedAnswerAction>;
+  postAnswer: (answer: PostAnswerData) => Promise<void>;
   postedAnswerResult?: AnswerData;
   clearPostedAnswer: () => void;
 }

@@ -8,13 +8,12 @@ import { ThunkDispatch } from 'redux-thunk';
 import {
   postQuestionActionCreator,
   AppState,
-  PostedQuestionAction,
   clearPostedQuestionActionCreator,
 } from './Store';
 import { AnyAction } from 'redux';
 
 interface Props {
-  postQuestion: (question: PostQuestionData) => Promise<PostedQuestionAction>;
+  postQuestion: (question: PostQuestionData) => Promise<void>;
   postedQuestionResult?: QuestionData;
   clearPostedQuestion: () => void;
 }

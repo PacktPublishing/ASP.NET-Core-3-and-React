@@ -8,14 +8,10 @@ import { css, jsx } from '@emotion/core';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
-import {
-  searchQuestionsActionCreator,
-  AppState,
-  SearchedQuestionsAction,
-} from './Store';
+import { searchQuestionsActionCreator, AppState } from './Store';
 
 interface Props extends RouteComponentProps {
-  searchQuestions: (criteria: string) => Promise<SearchedQuestionsAction>;
+  searchQuestions: (criteria: string) => Promise<void>;
   questions: QuestionData[] | null;
   questionLoading: boolean;
 }

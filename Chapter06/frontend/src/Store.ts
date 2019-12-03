@@ -81,12 +81,7 @@ type QuestionsActions =
   | PostedAnswerAction;
 
 export const getUnansweredQuestionsActionCreator: ActionCreator<
-  ThunkAction<
-    Promise<GotUnansweredQuestionsAction>,
-    QuestionData[],
-    null,
-    GotUnansweredQuestionsAction
-  >
+  ThunkAction<Promise<void>, QuestionData[], null, GotUnansweredQuestionsAction>
 > = () => {
   return async (dispatch: Dispatch) => {
     const gettingUnansweredQuestionsAction: GettingUnansweredQuestionsAction = {
@@ -98,12 +93,12 @@ export const getUnansweredQuestionsActionCreator: ActionCreator<
       questions,
       type: 'GotUnansweredQuestions',
     };
-    return dispatch(gotUnansweredQuestionAction);
+    dispatch(gotUnansweredQuestionAction);
   };
 };
 
 export const getQuestionActionCreator: ActionCreator<
-  ThunkAction<Promise<GotQuestionAction>, QuestionData, null, GotQuestionAction>
+  ThunkAction<Promise<void>, QuestionData, null, GotQuestionAction>
 > = (questionId: number) => {
   return async (dispatch: Dispatch) => {
     const gettingQuestionAction: GettingQuestionAction = {
@@ -115,17 +110,12 @@ export const getQuestionActionCreator: ActionCreator<
       question,
       type: 'GotQuestion',
     };
-    return dispatch(gotQuestionAction);
+    dispatch(gotQuestionAction);
   };
 };
 
 export const searchQuestionsActionCreator: ActionCreator<
-  ThunkAction<
-    Promise<SearchedQuestionsAction>,
-    QuestionData[],
-    null,
-    SearchedQuestionsAction
-  >
+  ThunkAction<Promise<void>, QuestionData[], null, SearchedQuestionsAction>
 > = (criteria: string) => {
   return async (dispatch: Dispatch) => {
     const searchingQuestionsAction: SearchingQuestionsAction = {
@@ -137,13 +127,13 @@ export const searchQuestionsActionCreator: ActionCreator<
       questions,
       type: 'SearchedQuestions',
     };
-    return dispatch(searchedQuestionAction);
+    dispatch(searchedQuestionAction);
   };
 };
 
 export const postQuestionActionCreator: ActionCreator<
   ThunkAction<
-    Promise<PostedQuestionAction>,
+    Promise<void>,
     QuestionData,
     PostQuestionData,
     PostedQuestionAction
@@ -155,7 +145,7 @@ export const postQuestionActionCreator: ActionCreator<
       type: 'PostedQuestion',
       result,
     };
-    return dispatch(postedQuestionAction);
+    dispatch(postedQuestionAction);
   };
 };
 
@@ -170,12 +160,7 @@ export const clearPostedQuestionActionCreator: ActionCreator<
 };
 
 export const postAnswerActionCreator: ActionCreator<
-  ThunkAction<
-    Promise<PostedAnswerAction>,
-    AnswerData,
-    PostAnswerData,
-    PostedAnswerAction
-  >
+  ThunkAction<Promise<void>, AnswerData, PostAnswerData, PostedAnswerAction>
 > = (answer: PostAnswerData) => {
   return async (dispatch: Dispatch) => {
     const result = await postAnswer(answer);
@@ -184,7 +169,7 @@ export const postAnswerActionCreator: ActionCreator<
       questionId: answer.questionId,
       result,
     };
-    return dispatch(postedAnswerAction);
+    dispatch(postedAnswerAction);
   };
 };
 

@@ -10,14 +10,10 @@ import { RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
-import {
-  getUnansweredQuestionsActionCreator,
-  AppState,
-  GotUnansweredQuestionsAction,
-} from './Store';
+import { getUnansweredQuestionsActionCreator, AppState } from './Store';
 
 interface Props extends RouteComponentProps {
-  getUnansweredQuestions: () => Promise<GotUnansweredQuestionsAction>;
+  getUnansweredQuestions: () => Promise<void>;
   questions: QuestionData[] | null;
   questionsLoading: boolean;
 }

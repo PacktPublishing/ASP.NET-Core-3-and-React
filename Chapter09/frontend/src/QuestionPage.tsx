@@ -42,14 +42,11 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
       setQuestion(mapQuestionFromServer(question));
     });
 
-    async function start() {
-      try {
-        await connection.start();
-      } catch (err) {
-        console.log(err);
-      }
+    try {
+      await connection.start();
+    } catch (err) {
+      console.log(err);
     }
-    await start();
 
     if (connection.state === HubConnectionState.Connected) {
       connection.invoke('SubscribeQuestion', questionId).catch((err: Error) => {
@@ -60,21 +57,19 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
     return connection;
   };
 
-  const cleanUpSignalRConnection = (
+  const cleanUpSignalRConnection = async (
     questionId: number,
     connection: HubConnection,
   ) => {
     if (connection.state === HubConnectionState.Connected) {
-      connection
-        .invoke('UnsubscribeQuestion', questionId)
-        .then(() => {
-          connection.off('Message');
-          connection.off('ReceiveQuestion');
-          connection.stop();
-        })
-        .catch((err: Error) => {
-          return console.error(err.toString());
-        });
+      try {
+        await connection.invoke('UnsubscribeQuestion', questionId);
+      } catch (err) {
+        return console.error(err.toString());
+      }
+      connection.off('Message');
+      connection.off('ReceiveQuestion');
+      connection.stop();
     } else {
       connection.off('Message');
       connection.off('ReceiveQuestion');

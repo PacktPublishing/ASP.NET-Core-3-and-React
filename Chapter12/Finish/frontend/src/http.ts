@@ -43,6 +43,7 @@ export const http = <REQB, RESB>(
         }
       })
       .catch(err => {
+        console.error(err);
         reject(err);
       });
   });

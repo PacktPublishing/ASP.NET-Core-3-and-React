@@ -50,6 +50,7 @@ export const getUnansweredQuestions = async (): Promise<QuestionData[]> => {
       return [];
     }
   } catch (ex) {
+    console.error(ex);
     return [];
   }
 };
@@ -67,6 +68,7 @@ export const getQuestion = async (
       return null;
     }
   } catch (ex) {
+    console.error(ex);
     return null;
   }
 };
@@ -84,6 +86,7 @@ export const searchQuestions = async (
       return [];
     }
   } catch (ex) {
+    console.error(ex);
     return [];
   }
 };
@@ -112,6 +115,7 @@ export const postQuestion = async (
       return undefined;
     }
   } catch (ex) {
+    console.error(ex);
     return undefined;
   }
 };
@@ -140,6 +144,7 @@ export const postAnswer = async (
       return undefined;
     }
   } catch (ex) {
+    console.error(ex);
     return undefined;
   }
 };

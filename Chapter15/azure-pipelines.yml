@@ -87,7 +87,7 @@ steps:
     archiveType: zip
     archiveFile: '$(Build.ArtifactStagingDirectory)/frontend-production/build.zip'
     replaceExistingArchive: true 
-  displayName: 'frontend staging zip files'
+  displayName: 'frontend production zip files'
 
 - task: PublishBuildArtifacts@1
   inputs:

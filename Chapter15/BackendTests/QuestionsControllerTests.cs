@@ -9,7 +9,7 @@ using QandA.Controllers;
 using QandA.Data;
 using QandA.Data.Models;
 
-namespace Tests
+namespace BackendTests
 {
     public class QuestionsControllerTests
     {

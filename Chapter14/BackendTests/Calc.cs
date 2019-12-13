@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Tests
+namespace BackendTests
 {
     public static class Calc
     {

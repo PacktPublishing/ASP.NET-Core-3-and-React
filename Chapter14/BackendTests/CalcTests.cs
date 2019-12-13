@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Tests
+namespace BackendTests
 {
     public class CalcTests
     {

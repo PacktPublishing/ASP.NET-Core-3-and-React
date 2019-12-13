@@ -9,10 +9,10 @@ describe('Ask question', () => {
     cy.contains('Sign In').click();
 
     cy.url().should('include', 'auth0');
-    cy.getByLabelText('Email')
+    cy.findByLabelText('Email')
       .type('your user name')
       .should('have.value', 'your user name');
-    cy.getByLabelText('Password')
+    cy.findByLabelText('Password')
       .type('your password')
       .should('have.value', 'your password');
     cy.get('form').submit();
@@ -23,10 +23,10 @@ describe('Ask question', () => {
     cy.contains('Ask a Question');
     var title = 'title test';
     var content = 'Lots and lots and lots and lots and lots of content test';
-    cy.getByLabelText('Title')
+    cy.findByLabelText('Title')
       .type(title)
       .should('have.value', title);
-    cy.getByLabelText('Content')
+    cy.findByLabelText('Content')
       .type(content)
       .should('have.value', content);
 

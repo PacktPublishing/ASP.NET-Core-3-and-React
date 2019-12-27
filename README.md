@@ -39,19 +39,19 @@ With the following software and hardware list you can run all code files present
 
 ### Software and Hardware List
 
-| Chapter      | Software required                   | OS required                        |
-| ------------ | ------------------------------------| -----------------------------------|
-| 1-15         | Chrome (latest)                     | Windows, Mac OS X, and Linux (Any) |
-| 1-6,9,12-15  | Node.js 8.2+ and npm 5.2+,          | Windows, Mac OS X, and Linux (Any) |
-|              | Visual Studio Code (latest)         | Windows, Mac OS X, and Linux (Any) |
-| 1, 2, 7-15   | Visual Studio 2019,                 | Windows, Mac OS X, and Linux (Any) |
-|              | .NET Core 3                         | Windows, Mac OS X, and Linux (Any) |
-| 7-15         | SQL Server 2017 Express,            | Windows, Mac OS X, and Linux (Any) |
-|              | SQL Server Management Studio        | Windows, Mac OS X, and Linux (Any) |
-| 8-11         | Postman                             | Windows, Mac OS X, and Linux (Any) |
-| 10           | Web Surge, PerfView                 | Windows, Mac OS X, and Linux (Any) |
-| 14, 15       | Microsoft Azure                     | Windows, Mac OS X, and Linux (Any) |
-| 15           | GitHub, Azure DevOps                | Windows, Mac OS X, and Linux (Any) |
+| Chapter        | Software required                   | OS required                        |
+| ------------   | ------------------------------------| -----------------------------------|
+| 1-15           | Chrome (latest)                     | Windows, Mac OS X, and Linux (Any) |
+| 1-6, 9, 12-15  | Node.js 8.2+ and npm 5.2+,          | Windows, Mac OS X, and Linux (Any) |
+|                | Visual Studio Code (latest)         | Windows, Mac OS X, and Linux (Any) |
+| 1-2, 7-15      | Visual Studio 2019,                 | Windows, Mac OS X, and Linux (Any) |
+|                | .NET Core 3                         | Windows, Mac OS X, and Linux (Any) |
+| 7-15           | SQL Server 2017 Express,            | Windows, Mac OS X, and Linux (Any) |
+|                | SQL Server Management Studio        | Windows, Mac OS X, and Linux (Any) |
+| 8-11           | Postman                             | Windows, Mac OS X, and Linux (Any) |
+| 10             | Web Surge, PerfView                 | Windows, Mac OS X, and Linux (Any) |
+| 14-15          | Microsoft Azure                     | Windows, Mac OS X, and Linux (Any) |
+| 15             | GitHub, Azure DevOps                | Windows, Mac OS X, and Linux (Any) |
 
 
 

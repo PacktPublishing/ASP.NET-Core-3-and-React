@@ -1,6 +1,6 @@
 # ASP.NET Core 3 and React
 
-<a href="https://www.packtpub.com/web-development/asp-net-core-3-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789950229"><img src="Cover Image URL of the Book" alt="ASP.NET Core 3 and React" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/web-development/asp-net-core-3-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789950229"><img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781789950229_1.jpeg" alt="ASP.NET Core 3 and React" height="256px" align="right"></a>
 
 This is the code repository for [ASP.NET Core 3 and React](https://www.packtpub.com/web-development/asp-net-core-3-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789950229), published by Packt.
 

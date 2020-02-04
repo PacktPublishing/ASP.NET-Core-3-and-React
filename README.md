@@ -63,6 +63,14 @@ Click on the following link to see the Code in Action:
 
 [http://bit.ly/2sZjjlp](http://bit.ly/2sZjjlp)
 
+## Errata
+* Page 7 (Paragraph 1, Line 2): **Carlo as tried it** _should be_ **Carlo has tried it**
+* Page 128 (Paragraph 2, Line 1): **Q and A** _should be_ **Q&A**
+* Page 128 (Bullet Point 4, Line 2): **Q and A** _should be_ **Q&A**
+* Page 152 (Paragraph 1, Line 1): **Forms are an important topic** _should be_ **Forms is an important topic**
+* Page 267 (Paragraph 3, Line 1): **The AddScoped method means that only one...** _should be_ **Using the AddScoped method means that only one...**
+* Page 41: **Question 8 is in fact a part of Question 7. Thus, there are a total of 9 questions, not 10.**
+
 ### Related products <Other books you may enjoy>
 * React Projects [[Packt]](https://www.packtpub.com/programming/react-js-projects?utm_source=github&utm_medium=repository&utm_campaign=9781789954937) [[Amazon]](https://www.amazon.com/dp/1789954932)
 

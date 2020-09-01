@@ -18,7 +18,7 @@ import {
   HubConnectionBuilder,
   HubConnectionState,
   HubConnection,
-} from '@aspnet/signalr';
+} from '@microsoft/signalr';
 
 interface RouteParams {
   questionId: string;

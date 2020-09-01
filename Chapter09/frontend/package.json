@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aspnet/signalr": "^3.0.0-preview6.19307.2",
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
+    "@microsoft/signalr": "^3.1.7",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
     "@types/react": "16.9.2",
